@@ -20,7 +20,6 @@
 - 칼럼명: | question | response_j | response_k
 -- | -- | -- | --
 설명 | isntruction | 선호답변 | 비선호 답변
----
 
 
 
