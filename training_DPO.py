@@ -99,7 +99,7 @@ def paired_data_preparation(
     # 함수내에 정의되는 함수로, 각 데이터 포맷과 구조에 맞게 매핑해주는 역할을 진행합니다.
     def return_prompt_and_responses(samples) -> Dict[str, str]:
         return {
-            "prompt": ["###질문: " + question + "\n\n###답변: " for question in samples["question"]],
+            "prompt": ["###질문:\n" + question + "\n\n###답변:\n" for question in samples["question"]],
             "chosen": samples["response_j"],
             "rejected": samples["response_k"],
         }
